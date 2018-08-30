@@ -1,0 +1,17 @@
+// Include your mixins here
+@mixin center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: $xl-width) {
+    @content;
+  }
+}
