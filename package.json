@@ -1,7 +1,7 @@
 {
   "name": "Sedona",
   "version": "1.0.0",
-  "description": "Educational non-responsive project",
+  "description": "Educational project with two resolutions and responsive layout between them",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
