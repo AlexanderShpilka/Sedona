@@ -1,0 +1,92 @@
+.showcase {
+  position: relative;
+  text-align: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 37px;
+    background-image: url('../img/mask-tablet@1x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 37px;
+
+    @include retina {
+      background-image: url('../img/mask-tablet@2x.png');
+    }
+
+    @include xl {
+      bottom: 4px;
+      height: 57px;
+      background-image: url('../img/mask-desktop@1x.png');
+      background-size: 1200px 57px;
+
+      @include retina {
+        background-image: url('../img/mask-desktop@2x.png');
+      }
+    }
+  }
+
+  &__landscape {
+    display: block;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__welcome {
+    position: absolute;
+    top: 76px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 188px;
+      height: 45px;
+    }
+  }
+
+  &__gorgeous {
+    position: absolute;
+    top: 132px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 256px;
+      height: 30px;
+    }
+  }
+
+  &__sedona {
+    position: absolute;
+    top: 214px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 458px;
+
+    img {
+      width: 458px;
+      height: 78px;
+    }
+  }
+
+  &__because {
+    position: absolute;
+    top: 348px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 296px;
+      height: 80px;
+    }
+  }
+}
