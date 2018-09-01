@@ -1,0 +1,54 @@
+.features {
+  padding-top: 20px;
+
+  &__title {
+    width: 500px;
+    padding: 10px 20px;
+    @include center;
+    margin-top: 23px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $heading-color;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    @include xl {
+      margin-top: 26px;
+    }
+  }
+
+  &__text {
+    width: fit-content;
+    padding: 10px;
+    @include center;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 31px;
+
+    &--bg {
+      background-color: #eee;
+    }
+
+    @include xl {
+      padding-bottom: 52px;
+    }
+
+    &:last-of-type {
+      padding-top: 17px;
+      padding-bottom: 7px;
+
+      @include xl {
+        padding-bottom: 29px;
+      }
+    }
+  }
+}

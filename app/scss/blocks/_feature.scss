@@ -1,0 +1,159 @@
+.feature {
+  width: 33.3%;
+
+  &--flex {
+    display: flex;
+    width: 100%;
+  }
+
+  &__desc {
+    padding: 20px;
+    text-align: center;
+
+    &--one-third {
+      width: 33.5%;
+    }
+
+    &--bg {
+      background-color: $brand-color;
+    }
+  }
+
+  &__title {
+    padding: 10px 30px;
+    margin-top: 17px;
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 21px;
+    color: $heading-color;
+    text-transform: uppercase;
+
+    &--white {
+      color: #fff;
+    }
+
+    &--no-mb {
+      margin-bottom: 0;
+    }
+
+    &--no-mt {
+      margin-top: 0;
+    }
+
+    @include xl {
+      padding-right: 100px;
+      padding-left: 100px;
+    }
+  }
+
+  &__number {
+    &--white {
+      color: #fff;
+    }
+  }
+
+  &__text {
+    padding: 10px 20px;
+    margin-top: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    &--white {
+      color: #fff;
+    }
+
+    &--less-mt {
+      margin-top: 3px;
+    }
+
+    &--house,
+    &--souvenir {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+
+    &--food {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    &--narrow {
+      padding-right: 35px;
+      padding-left: 35px;
+    }
+
+    @include xl {
+      padding-right: 29px;
+      padding-left: 29px;
+
+      &--narrow {
+        padding-right: 43px;
+        padding-left: 43px;
+      }
+
+      &--square {
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    height: 256px;
+    width: 66.5%;
+    overflow-y: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    @media (min-width: 868px) {
+      img {
+        top: -20px;
+      }
+    }
+
+    @media (min-width: 968px) {
+      img {
+        top: -40px;
+      }
+    }
+
+    @media (min-width: 1068px) {
+      img {
+        top: -60px;
+      }
+    }
+
+    @include xl {
+      position: relative;
+
+      img {
+        top: -76px;
+      }
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+
+    &--house {
+      padding-top: 20px;
+    }
+
+    &--food {
+      padding-top: 21px;
+    }
+
+    &--souvenir {
+      padding-top: 16px;
+    }
+  }
+}
