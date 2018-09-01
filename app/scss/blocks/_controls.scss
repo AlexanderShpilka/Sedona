@@ -1,0 +1,75 @@
+.controls {
+  display: flex;
+  width: 114px;
+
+  &__btn {
+    position: relative;
+    width: 33.3%;
+    background-color: transparent;
+    border: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      transition: 0.1s ease-in;
+    }
+
+    &--decr {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 12px;
+        height: 3px;
+        background-color: #a9a9a9;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+
+    &--incr {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 12px;
+        height: 3px;
+        background-color: #a9a9a9;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 3px;
+        height: 12px;
+        background-color: #a9a9a9;
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:focus::before,
+    &:focus::after {
+      background-color: #000;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $brand-color;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

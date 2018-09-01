@@ -1,0 +1,148 @@
+.search-form {
+  width: 568px;
+  padding: 55px;
+  padding-top: 41px;
+
+  &__group {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0 15px;
+
+    &--half {
+      width: 50%;
+    }
+  }
+
+  &__label {
+    padding-top: 7px;
+    padding-right: 10px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $heading-color;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+
+    &--children {
+      padding-left: 50px;
+    }
+  }
+
+  &__input {
+    width: 346px;
+    padding: 4px 35px 4px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $heading-color;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border: 2px solid #f2f2f2;
+    transition: 0.4s ease-in;
+
+    &--controls {
+      width: 33.3%;
+      padding-right: 5px;
+      padding-left: 5px;
+      text-align: center;
+      -moz-appearance: textfield;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+
+      &::-webkit-input-placeholder {
+        text-align: center;
+      }
+
+      &:-ms-input-placeholder {
+        text-align: center;
+      }
+
+      &::-ms-input-placeholder {
+        text-align: center;
+      }
+
+      &::placeholder {
+        text-align: center;
+      }
+    }
+
+    &:hover {
+      background-color: #ebebeb;
+      border-color: #ebebeb;
+    }
+
+    &:focus {
+      background-color: #fff;
+      border-color: #e5e5e5;
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #000;
+    }
+
+    &:-ms-input-placeholder {
+      color: #000;
+    }
+
+    &::-ms-input-placeholder {
+      color: #000;
+    }
+
+    &::placeholder {
+      color: #000;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 22px;
+    right: 9px;
+    fill: #cacaca;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      fill: #000;
+    }
+
+    &:active {
+      fill: $brand-color;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__btn {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    margin-top: 40px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $brand-color;
+    border: none;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      background-color: $brand-color-hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $brand-color-active;
+      outline: none;
+    }
+  }
+}
