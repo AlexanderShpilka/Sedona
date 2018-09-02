@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 21px 10px 10px;
+
+  &__link {
+    display: inline-block;
+    min-width: 46px;
+    min-height: 48px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-align: center;
+    background-color: $brand-color;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      background-color: $brand-color-hover;
+    }
+
+    &:active {
+      background-color: $brand-color-active;
+
+      .social__icon {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &__icon {
+    &--tw {
+      padding-top: 17px;
+    }
+
+    &--fb {
+      padding-top: 13px;
+    }
+
+    &--yt {
+      padding-top: 16px;
+    }
+  }
+}
