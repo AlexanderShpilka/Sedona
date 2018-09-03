@@ -39,7 +39,59 @@
 
       <main>
         
-        
+        <!-- FORM -->
+        <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="filter__group  param">
+            <span class="param__title">Инфраструктура:</span>
+            <ul class="param__list">
+              <li class="param__item">
+                <input class="visually-hidden" id="infrastructure-pool" type="checkbox" name="pool" checked>
+                <label class="param__label" for="infrastructure-pool">Бассейн</label>
+              </li>
+              <li class="param__item">
+                <input class="visually-hidden" id="infrastructure-parking" type="checkbox" name="parking">
+                <label class="param__label" for="infrastructure-parking">Парковка</label>
+              </li>
+              <li class="param__item">
+                <input class="visually-hidden" id="infrastructure-wifi" type="checkbox" name="wifi">
+                <label class="param__label" for="infrastructure-wifi">Wi-fi</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__group  filter__group--housing  param">
+            <span class="param__title">Тип жилья:</span>
+            <ul class="param__list">
+              <li class="param__item">
+                <input class="visually-hidden" id="housing-hotel" type="checkbox" name="hotel" checked>
+                <label class="param__label" for="housing-hotel">Гостиница</label>
+              </li>
+              <li class="param__item">
+                <input class="visually-hidden" id="housing-motel" type="checkbox" name="motel" checked>
+                <label class="param__label" for="housing-motel">Мотель</label>
+              </li>
+              <li class="param__item">
+                <input class="visually-hidden" id="housing-apartment" type="checkbox" name="wifi" checked>
+                <label class="param__label" for="housing-apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__right">
+            <div class="filter__group  param  price">
+              <span class="param__title">Стоимость в сутки (р):</span>
+              <div class="price__input-wrapper">
+                <input class="price__input" type="number" name="min-price" placeholder="от 0">
+                <input class="price__input" type="number" name="max-price" placeholder="до 3000">
+              </div>
+              <div class="price__range-wrapper">
+                <div class="price__range">
+                  <div class="price__btn  price__btn--min"></div>
+                  <div class="price__btn  price__btn--max"></div>
+                </div>
+              </div>
+            </div>
+            <button class="filter__btn" type="submit">Показать</button>
+          </div>
+        </form>
         
       </main>
 

@@ -1,11 +1,6 @@
 .page-header {
   position: relative;
-  padding: 5px 47px;
-
-  @include xl {
-    padding-right: 73px;
-    padding-left: 73px;
-  }
+  padding: 5px 6%;
 
   &__logo-link {
     position: absolute;

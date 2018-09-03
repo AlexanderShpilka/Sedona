@@ -1,0 +1,52 @@
+.filter {
+  display: flex;
+  padding: 20px 6% 6px;
+  background-image: url('../img/filter-bg@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__group {
+    &--housing {
+      margin-left: 94px;
+
+      @include xl {
+        margin-left: 111px;
+      }
+    }
+  }
+
+  &__right {
+    width: 219px;
+    margin-left: 72px;
+    margin-left: auto;
+
+    @include xl {
+      width: 320px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 137px;
+    padding: 8px 10px;
+    @include center;
+    margin-top: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+
+    &:active {
+      outline: none;
+    }
+  }
+}
