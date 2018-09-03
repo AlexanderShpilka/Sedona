@@ -1,0 +1,46 @@
+.sort-type {
+  display: flex;
+  padding: 10px;
+
+  &__label {
+    padding: 6px 5px 5px 0;
+    font-size: 12px;
+    line-height: 18px;
+    color: $heading-color;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 6px;
+    margin-left: 11px;
+  }
+
+  &__item {
+    padding: 2px 17px;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    border-bottom: 1px dotted $brand-color;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &:active {
+      color: #000;
+      border: none;
+    }
+
+    &--current {
+      color: $brand-color;
+      border: none;
+    }
+  }
+}

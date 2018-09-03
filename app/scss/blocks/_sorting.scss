@@ -1,0 +1,21 @@
+.sorting {
+  display: flex;
+  padding: 20px 6%;
+
+  &__result {
+    padding: 10px 10px 10px 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $heading-color;
+    text-transform: uppercase;
+  }
+
+  &__sort-type {
+    margin-left: 27px;
+  }
+
+  &__sort-view {
+    margin-left: auto;
+  }
+}

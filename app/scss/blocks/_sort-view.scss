@@ -1,0 +1,33 @@
+.sort-view {
+  display: flex;
+  padding: 10px 0 10px 10px;
+
+  &__item {
+    padding: 6px 0 5px 12px;
+  }
+
+  &__link {
+    svg {
+      fill: #cacaca;
+      transition: 0.1s ease-in;
+    }
+
+    &:hover {
+      svg {
+        fill: #231f20;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $brand-color;
+      }
+    }
+
+    &--current {
+      svg {
+        fill: $brand-color;
+      }
+    }
+  }
+}
