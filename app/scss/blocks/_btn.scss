@@ -1,0 +1,40 @@
+.btn {
+  padding: 3px 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.1s ease-in;
+
+  &--detail {
+    width: 110px;
+    background-color: $brand-color;
+
+    &:hover {
+      background-color: $brand-color-hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $brand-color-active;
+    }
+  }
+
+  &--book {
+    width: 142px;
+    margin-left: 6px;
+    background-color: $brown;
+
+    &:hover {
+      background-color: $brown-hover;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $brown-active;
+    }
+  }
+}

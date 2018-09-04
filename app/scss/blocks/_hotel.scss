@@ -1,0 +1,92 @@
+.hotel {
+  display: flex;
+  padding: 20px 6% 30px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &__img {
+    display: block;
+    width: 135px;
+    height: 90px;
+    margin-top: 10px;
+
+    img {
+      width: 135px;
+      height: 90px;
+    }
+  }
+
+  &__desc {
+    margin-left: 31px;
+  }
+
+  &__name {
+    padding: 5px 10px 5px 0;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: $heading-color;
+    text-transform: uppercase;
+    transition: 0.1s ease-in;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__params {
+    display: flex;
+  }
+
+  &__type,
+  &__price {
+    width: 110px;
+    padding-top: 2px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    padding-left: 6px;
+  }
+
+  &__rating {
+    margin-left: auto;
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn {
+    margin-top: 14px;
+  }
+
+  &__rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: flex-end;
+    padding: 9px 0;
+  }
+
+  &__star {
+    padding-left: 6px;
+  }
+
+  &__rating-value {
+    width: 110px;
+    padding: 3px 6px;
+    line-height: 21px;
+    color: #666;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
